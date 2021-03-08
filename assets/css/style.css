@@ -1,0 +1,139 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+
+
+/* #timeblock9AM, #timeblock10AM,
+#timeblock11AM, #timeblock12PM,
+#timeblock1PM, #timeblock2PM,
+#timeblock3PM, #timeblock4PM,
+#timeblock5PM { 
+  display: relative; */
+  /* float:left; */
+  /* margin:auto; */
+  /* margin: 25px 80%;
+  width: 80%;
+  border: solid 5px;
+  background-color: yellow;
+} */
+
+.container{
+  display: grid;
+  grid-template-columns: 90px auto 90px; /* each auto represents a columns */
+  margin: auto;
+  width: 80%;
+}
+
+.time, .block, .save {
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  border-right: solid 1px white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px 0px 15px 0px;
+}
+
+textarea:focus {
+  outline-color:#06AED5;
+}
+
+.time {
+  border-color: gray;
+}
+
+.block {
+  background-color:lightgray;
+}
+
+.save {
+  background-color: #06AED5;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.time p {
+  float:right;
+  padding: 10px 5px 0px 0px;
+}
+
+.oi-lock-locked {
+  color: white;
+  font-size: 20px;
+}
+
+.oi {
+  padding: 19px 15px 15px 34px;
+}
