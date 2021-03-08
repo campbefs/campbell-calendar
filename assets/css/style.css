@@ -121,3 +121,18 @@ textarea:focus {
 .oi {
   padding: 19px 15px 15px 34px;
 }
+
+/* Green background for future */
+.futureBlock {
+  background-color:lightgreen;
+}
+
+/* Red background for current */
+/* Green background */
+.currentBlock {
+  background-color:rgb(231, 100, 100);
+}
+
+.oi-lock-locked:hover {
+  color: black;
+}

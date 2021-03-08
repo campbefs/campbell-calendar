@@ -1,15 +1,36 @@
-// Load Tasks from Local Storage
-timeArr = ['9AM','10AM','11AM','12PM','1PM','2PM','3PM','4PM','5PM']
+// Current day in Header
+$currentDate = $("#currentDay");
+momentDate = moment().format('dddd, MMMM Do');
+$currentDate.text(momentDate);
 
+
+// current hour
+momentHour = moment().get('hour');
+
+// Load Tasks from Local Storage (if any)
+timeArr = ['9AM','10AM','11AM','12PM','1PM','2PM','3PM','4PM','5PM']
+timeArrInt = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+
+// Looping through times
 for (i=0; i<9; i++) {
   arrID = timeArr[i];
   //console.log(arrID);
 
   $textAreaID = document.getElementById(arrID);
   $textAreaID.value = localStorage.getItem(arrID);
+
+  // color any current or future blocks
+  if (momentHour < timeArrInt[i]) {
+    blockID = ['#block', arrID].join("");
+    $block = $(blockID);
+    $block.addClass("futureBlock");
+  } else if (momentHour === timeArrInt[i]) {
+    blockID = ['#block', arrID].join("");
+    $block = $(blockID);
+    $block.addClass("currentBlock");
+  }
 };
 
-//data = localStorage.getItem("4PM");
 
 // Save Tasks
 var saveTasks = function(blockID, textData) {
@@ -48,5 +69,7 @@ $(".save").on("click", function(text) {
   saveTasks(textID, textValue);
 
 });
+
+
 
 
