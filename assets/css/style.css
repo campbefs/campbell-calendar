@@ -70,22 +70,6 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-
-
-/* #timeblock9AM, #timeblock10AM,
-#timeblock11AM, #timeblock12PM,
-#timeblock1PM, #timeblock2PM,
-#timeblock3PM, #timeblock4PM,
-#timeblock5PM { 
-  display: relative; */
-  /* float:left; */
-  /* margin:auto; */
-  /* margin: 25px 80%;
-  width: 80%;
-  border: solid 5px;
-  background-color: yellow;
-} */
-
 .container{
   display: grid;
   grid-template-columns: 90px auto 90px; /* each auto represents a columns */
